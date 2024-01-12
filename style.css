@@ -1,0 +1,124 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --fundo-escuro: #000;
+    --fundo-card: #1d2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+    --input: #38434F;
+    --primario: #70b5f9;
+    --positivo: #3ec786;
+  }
+
+  #global-nav{
+    padding: 0 var(--spacing-three-x);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 52px;
+    z-index: 105;
+    background-color: var(--fundo-card);
+  }    
+
+  .global-nav__content{
+    width: 100%;
+    align-items: center;
+    display: flex;    
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  .logo {
+    width: 34px;
+    height: 34px;
+    top: 9px;
+    margin-left: 153px;
+  }
+
+  .global-nav__search{   
+    
+    z-index: 105;
+    width: 280px; 
+    height: 34px;     
+    margin-left: 10px;  
+    border: 0px; 
+    border-radius: 4px;
+    background-color: var(--input);
+  }
+
+  #search-bar{
+    opacity: 1;
+    border: 0px; 
+    border-radius: 4px;
+    height: 34px;
+    background-color: var(--input);
+    width: 240px; 
+    outline: none;
+    
+  }
+
+  .search-icon {
+    height: 34px;
+    font-size: 1.2em; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o input */
+    opacity: 1;
+    background-color: var(--input);
+    border: 0px; 
+    border-radius: 4px;
+}
+
+#search-bar::placeholder {
+    color: #ffff;     
+}
+
+.global-nav__nav{    
+    min-height: 52px;    
+}
+
+.global-nav__nav:hover {
+    cursor: pointer;
+}
+
+.global-nav__primary-items{
+    display: flex;
+    align-items: center;
+}
+
+.global-nav__primary-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 38px;
+}
+
+#text-nav{
+    color: #ffff;   
+    font-size: 12px;  
+}
+
+#icons-nav{
+    width: 24px;
+    height: 24px;
+}
+
+.vertical-line {
+    color: #fff; /* Cor desejada para a linha vertical */
+    font-size: 1.2em; /* Tamanho desejado para a linha vertical */
+    margin-right: 8px; /* Espaçamento entre a linha vertical e o texto */
+}
+
+#solucoes{
+    margin-left: .2rem;
+    border-left: 1px solid var(--texto-secundario);
+}
